@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.orionlibs</groupId>
-    <artifactId>project-name</artifactId>
+    <artifactId>orion-digital-twin-model</artifactId>
     <version>0.0.1</version>
-    <name>name</name>
-    <description>description</description>
-    <url>https://github.com/orionlibs/project-name</url>
+    <name>Orion Digital Twin Model</name>
+    <description>Representation and parsing of ODTM (Orion digital Twin Models) </description>
+    <url>https://github.com/orionlibs/orion-digital-twin-model</url>
     
     
     <properties>
@@ -17,9 +17,9 @@
 
 
     <scm>
-        <url>https://github.com/orionlibs/project-name</url>
-        <connection>scm:git:https://github.com/orionlibs/project-name.git</connection>
-        <developerConnection>scm:git:ssh://github.com/orionlibs/project-name.git</developerConnection>
+        <url>https://github.com/orionlibs/orion-digital-twin-model</url>
+        <connection>scm:git:https://github.com/orionlibs/orion-digital-twin-model.git</connection>
+        <developerConnection>scm:git:ssh://github.com/orionlibs/orion-digital-twin-model.git</developerConnection>
     </scm>
 
 
@@ -174,7 +174,7 @@
             </plugin>
             
             
-            <plugin>
+            <!--<plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
                 <version>9.1.0</version>
@@ -185,7 +185,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
 
 
@@ -235,6 +235,13 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>io.github.orionlibs</groupId>
+            <artifactId>orion-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

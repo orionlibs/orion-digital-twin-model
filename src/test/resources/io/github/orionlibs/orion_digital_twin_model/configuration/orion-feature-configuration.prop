@@ -1,0 +1,2 @@
+orionlibs.orion_digital_twin_model.enabled=true
+thing.id.regex=(?<ns>|(?:(?:[a-zA-Z]\w*+)(?:[.-][a-zA-Z]\w*+)*+)):(?<name>[^\x00-\x1F\x7F-\xFF/]++)

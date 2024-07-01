@@ -1,4 +1,4 @@
-package io.github.orionlibs.project_name;
+package io.github.orionlibs.orion_digital_twin_model;
 
 public class OrionDomain
 {
