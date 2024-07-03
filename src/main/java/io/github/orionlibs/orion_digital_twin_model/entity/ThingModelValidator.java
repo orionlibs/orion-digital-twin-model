@@ -5,8 +5,14 @@ import io.github.orionlibs.core.data.validation.ValidationService;
 
 public class ThingModelValidator
 {
-    public static InvalidFields validate(ThingModel thing)
+    static InvalidFields validate(ThingModel thing)
     {
         return ValidationService.validateObjectAndGetInvalidInstanceVariables(thing);
+    }
+
+
+    static boolean isValid(ThingModel thing)
+    {
+        return ValidationService.isObjectValid(thing);
     }
 }
