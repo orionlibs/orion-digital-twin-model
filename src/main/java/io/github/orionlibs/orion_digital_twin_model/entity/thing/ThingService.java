@@ -1,6 +1,7 @@
-package io.github.orionlibs.orion_digital_twin_model.entity;
+package io.github.orionlibs.orion_digital_twin_model.entity.thing;
 
 import io.github.orionlibs.core.data.validation.InvalidFields;
+import io.github.orionlibs.orion_digital_twin_model.entity.InvalidODTMException;
 
 public class ThingService
 {

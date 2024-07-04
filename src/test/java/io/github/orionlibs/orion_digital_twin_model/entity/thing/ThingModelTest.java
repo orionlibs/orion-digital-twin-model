@@ -1,10 +1,11 @@
-package io.github.orionlibs.orion_digital_twin_model.entity;
+package io.github.orionlibs.orion_digital_twin_model.entity.thing;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import io.github.orionlibs.core.data.validation.InvalidFields;
 import io.github.orionlibs.orion_digital_twin_model.ATest;
+import io.github.orionlibs.orion_digital_twin_model.entity.InvalidODTMException;
 import java.util.Set;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
