@@ -10,7 +10,7 @@ import lombok.Getter;
 //@Builder
 @Getter
 //@Setter
-public class ThingModel implements OrionInvalidatable
+public final class ThingModel implements OrionInvalidatable
 {
     @WithRegEx("(?<ns>|(?:(?:[a-zA-Z]\\w*+)(?:[.-][a-zA-Z]\\w*+)*+)):(?<name>[^\\x00-\\x1F\\x7F-\\xFF/]++)")
     @SerializedName("@id")
