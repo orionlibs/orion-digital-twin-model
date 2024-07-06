@@ -19,6 +19,7 @@ class ThingBuilder
     public ThingModel buildThing() throws InvalidODTMException
     {
         validateThingID();
+        validateThingType();
         if(invalidFields.isEmpty())
         {
             return model;
@@ -36,6 +37,16 @@ class ThingBuilder
         if(ThingIDValidator.isInvalid(thingID))
         {
             invalidFields.addField(ThingID.serialisedJSONName);
+        }
+    }
+
+
+    private void validateThingType()
+    {
+        ThingType type = new ThingType(model.getType());
+        if(ThingTypeValidator.isInvalid(type))
+        {
+            invalidFields.addField(ThingType.serialisedJSONName);
         }
     }
 }

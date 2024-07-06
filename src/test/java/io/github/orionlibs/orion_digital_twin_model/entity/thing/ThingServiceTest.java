@@ -25,8 +25,8 @@ public class ThingServiceTest extends ATest
         catch(InvalidODTMException e)
         {
             InvalidFields validationResult = (InvalidFields)e.getExceptionData();
-            assertEquals(1, validationResult.getFields().size());
-            assertEquals(Set.of(ThingID.serialisedJSONName), validationResult.getFields());
+            assertEquals(2, validationResult.getFields().size());
+            assertEquals(Set.of(ThingID.serialisedJSONName, ThingType.serialisedJSONName), validationResult.getFields());
         }
     }
 
@@ -34,7 +34,7 @@ public class ThingServiceTest extends ATest
     @Test
     void test_validator_succeeds() throws InvalidODTMException
     {
-        String sample = loadJSONTestResource("/ODTMSamples/valid-id.json");
+        String sample = loadJSONTestResource("/ODTMSamples/valid-fields.json");
         ThingModel actual = ThingService.buildThing(sample);
         assertEquals("company1:system1:Thermostat", actual.getThingID());
     }
