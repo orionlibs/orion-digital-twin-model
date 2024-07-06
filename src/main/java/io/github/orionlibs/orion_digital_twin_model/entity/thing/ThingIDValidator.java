@@ -3,7 +3,7 @@ package io.github.orionlibs.orion_digital_twin_model.entity.thing;
 import io.github.orionlibs.orion_digital_twin_model.config.ConfigurationService;
 import java.util.regex.Pattern;
 
-public class ThingIDValidator
+class ThingIDValidator
 {
     private static final String regexPattern = ConfigurationService.getProp("thing.id.regex");
 
@@ -26,5 +26,11 @@ public class ThingIDValidator
                 return false;
             }
         }
+    }
+
+
+    static boolean isInvalid(ThingID thingID)
+    {
+        return !isValid(thingID);
     }
 }

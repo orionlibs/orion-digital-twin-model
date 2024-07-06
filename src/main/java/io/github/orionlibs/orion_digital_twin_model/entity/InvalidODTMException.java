@@ -4,7 +4,7 @@ import io.github.orionlibs.core.abstraction.OrionCheckedException;
 
 public class InvalidODTMException extends OrionCheckedException
 {
-    private static final String DefaultErrorMessage = "Invalid JSON-LD for the given DTDLv3.";
+    private static final String DefaultErrorMessage = "Invalid JSON-LD for the given ODTM.";
 
 
     public InvalidODTMException()
